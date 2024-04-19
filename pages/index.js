@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 
 // pages/index.js
 
-import SearchBar from '@/components/SearchBar'; // Adjust the import path as needed
+import SearchBar from './SearchBar'; // Using relative import path
 
 function Home() {
   return (
