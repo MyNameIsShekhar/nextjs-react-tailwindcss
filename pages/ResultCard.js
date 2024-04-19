@@ -1,6 +1,12 @@
 import React from 'react';
 
 function ResultCard({ fileData, handleDownload }) {
+  // Check if fileData exists before destructure
+  if (!fileData) {
+    return null; // Return null if fileData is undefined
+  }
+
+  // Destructure fileData properties
   const { file_name, link, direct_link, thumb, size } = fileData;
 
   return (
