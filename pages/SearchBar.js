@@ -36,7 +36,13 @@ function SearchBar() {
         throw new Error('Failed to fetch data');
       }
       const data = await response.json();
-      setResponseData(data);
+      setResponseData({
+        file_name: data.file_name,
+        link: data.link,
+        direct_link: data.direct_link,
+        thumb: data.thumb,
+        size: data.size
+      });
       setShowResultCard(true);
     } catch (error) {
       setError('An error occurred. Please try again.');
