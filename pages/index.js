@@ -2,12 +2,18 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-const Home = () => {
+
+// pages/index.js
+
+import SearchBar from '@/components/SearchBar'; // Adjust the import path as needed
+
+function Home() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <div>
+      <SearchBar />
+      {/* Other content */}
+    </div>
+  );
 }
 
 export default Home;
