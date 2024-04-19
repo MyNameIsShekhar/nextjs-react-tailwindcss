@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ResultCard from '../ResultCard'; // Update the path as per your project structure
+import ResultCard from './ResultCard'; // Update the path as per your project structure
 
 function SearchBar() {
   const [url, setUrl] = useState('');
