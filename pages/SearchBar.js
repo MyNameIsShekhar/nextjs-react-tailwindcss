@@ -82,7 +82,7 @@ function SearchBar() {
         </form>
         {showLoadingGif && (
           <img
-            src="/loading.gif" // Update to the correct path of your loading GIF
+            src="/loading .gif" // Update to the correct path of your loading GIF
             alt="loading"
             className={`mt-4 mx-auto ${window.innerWidth > 768 ? 'w-60' : ''}`}
           />
